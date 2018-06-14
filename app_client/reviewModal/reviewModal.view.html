@@ -1,0 +1,21 @@
+<div>
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Review Form for {{$ctrl.data.location.name}}</h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <label for="rating"></label>
+        <select ng-model="$ctrl.rating" class="rating form-control input-sm" name="rating">
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+        </select>
+        <label for="review">Review</label>
+        <textarea id="review" ng-model="$ctrl.reviewText" name="review" class="form-control" rows="5"></textarea>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="$ctrl.onSubmit()">Add Review</button>
+        <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "loc8r",
+  "description": "",
+  "main": "",
+  "authors": [
+    "codernazi <omitewary@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

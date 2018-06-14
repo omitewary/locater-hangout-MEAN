@@ -1,0 +1,37 @@
+doctype html
+html(ng-app='loc8rApp')
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/dist/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='/') Loc8r
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/about/') About
+    .container
+      div(ng-view)
+        block content
+        footer
+          .row
+            .col-xs-12
+              small &copy; Omi Tewary 2016
+    script(src='/angular/angular.js')
+    script(src='angular-route/angular-route.js')
+    //script(src='/app.js')
+    //script(src='/home/home.controller.js')
+    //script(src='/commons/services/loc8rData.service.js')
+    //script(src='/commons/services/geoLocation.service.js')
+    //script(src='/commons/filter/formatDistance.filter.js')
+    //script(src='/commons/directive/ratingStars/ratingStars.directive.js')
+    script(src='/jquery/dist/jquery.js')
+    script(src='/bootstrap/dist/js/bootstrap.min.js')
